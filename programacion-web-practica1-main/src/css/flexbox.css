@@ -64,20 +64,40 @@
 }
 *--------------------------------------------------------------------------------------------------------/
 
-/* Navbar ul "TRABAJO EN CLASE"
+/* Navbar ul "TRABAJO EN CLASE CON FLEX"
 
 .navbar ul {
-    list-style: none;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem 0;
+}
+
+
+@media (max-width: 1024px) {
+  .navbar ul {
     display: flex;
-    justify-content: center;
-    gap: 2rem;
-    padding: 1rem 0;
+    flex-direction: column;
+    align-items: center;
   }
-  
-  @media (max-width: 1024px){
-    .navbar ul {
-      flex-direction: column;
-      align-items: center;
-    }
+
+  .navbar ul li:nth-child(1) { order: 3; } 
+  .navbar ul li:nth-child(2) { order: 2; } 
+  .navbar ul li:nth-child(3) { order: 1; } 
+  .navbar ul li:nth-child(4) { order: 4; } 
+}
+
+@media (max-width: 768px) {
+  .navbar ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
+
+  .navbar ul li:nth-child(1) { order: 4; } 
+  .navbar ul li:nth-child(2) { order: 2; } 
+  .navbar ul li:nth-child(3) { order: 3; } 
+  .navbar ul li:nth-child(4) { order: 1; } 
+}
 */

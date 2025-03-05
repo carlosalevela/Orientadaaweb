@@ -20,17 +20,39 @@
 }
 
 /*navbar ul grid "TRABAJO EN CLASE CON GRID"
+
 .navbar ul {
     list-style: none;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    display: grid; 
+    justify-content: center;
     gap: 2rem;
     padding: 1rem 0;
   }
   
-  @media (max-width: 1024px){
+  @media (max-width: 1024px) {
     .navbar ul {
-        grid-template-columns: 1fr
+      grid-template-rows: repeat(4, auto);
+      text-align: center;
     }
+  
+
+    .navbar ul li:nth-child(1) { order: 3; } 
+    .navbar ul li:nth-child(2) { order: 2; } 
+    .navbar ul li:nth-child(3) { order: 1; } 
+    .navbar ul li:nth-child(4) { order: 4; } 
+  }
+  
+  
+  @media (max-width: 768px) {
+    .navbar ul {
+      grid-template-rows: repeat(4, auto);
+      text-align: center;
+    }
+  
+    
+    .navbar ul li:nth-child(1) { order: 4; } 
+    .navbar ul li:nth-child(2) { order: 2; } 
+    .navbar ul li:nth-child(3) { order: 3; } 
+    .navbar ul li:nth-child(4) { order: 1; } 
   }
 */
